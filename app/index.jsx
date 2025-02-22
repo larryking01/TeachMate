@@ -64,7 +64,7 @@ export default InitialRoute
 const styles = StyleSheet.create({
     parentContainer: {
         flex: 1,
-        backgroundColor: Themes.primaryColor
+        backgroundColor: Themes.parentBackgroundColor
     },
     imageRounded: {
         width: 380,
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
     },
     button: {
         padding: 16,
-        backgroundColor: Themes.buttonPrimaryColor,
+        backgroundColor: Themes.primaryButtonBackground,
         marginBottom: 25,
         borderRadius: 5,
         width: '80%',

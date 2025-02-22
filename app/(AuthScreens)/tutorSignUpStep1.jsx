@@ -83,10 +83,12 @@ export default TutorSignUp
 
 const styles = StyleSheet.create({
     parentContainer: {
-        flex: 1
+        flex: 1,
+        backgroundColor: Themes.parentBackgroundColor,
+
     },
     headerView: {
-        backgroundColor: Themes.primaryColor,
+        backgroundColor: Themes.white,
         height: '16%',
         marginBottom: 30,
         paddingLeft: 20
@@ -129,7 +131,7 @@ const styles = StyleSheet.create({
         color: 'blue'
     },
     signUpBtn: {
-        backgroundColor: Themes.buttonPrimaryColor,
+        backgroundColor: Themes.primaryButtonBackground,
         padding: 15,
         height: 53,
         borderRadius: 10,

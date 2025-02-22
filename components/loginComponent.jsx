@@ -84,9 +84,10 @@ export default LoginComponent
 const styles = StyleSheet.create({
     parentContainer: {
         flex: 1,
+        backgroundColor: Themes.parentBackgroundColor,
     },
     headerView: {
-        backgroundColor: Themes.primaryColor,
+        backgroundColor: Themes.white,
         height: '18%',
         marginBottom: 60,
         paddingLeft: 20
@@ -132,7 +133,7 @@ const styles = StyleSheet.create({
         marginBottom: 60
     },
     loginBtn: {
-        backgroundColor: Themes.buttonPrimaryColor,
+        backgroundColor: Themes.primaryButtonBackground,
         padding: 15,
         width: '100%',
         borderRadius: 10,

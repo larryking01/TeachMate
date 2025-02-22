@@ -11,6 +11,7 @@ export default function App() {
           <Stack.Screen name='index' options={{ headerShown: false }}  />
           <Stack.Screen name='(AuthScreens)' options={{ headerShown: false }} />
           <Stack.Screen name='(MainAppScreens)' options={{ headerShown: false }} />
+          <Stack.Screen name='(SupportScreen)' options={{ headerShown: false }} />
       </Stack>
   );
 
