@@ -8,6 +8,8 @@ import GoBackArrow from '../../components/navBackArrow'
 import Fontisto from 'react-native-vector-icons/Fontisto'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import AntDesignIcon from 'react-native-vector-icons/AntDesign'
+import SearchComponent from '../../components/searchComponent'
+
 
 
 
@@ -23,9 +25,6 @@ const Tutors = () => {
 
 
 
-
-
-
     return (
         <SafeAreaView style={ styles.parentContainer }>
             <GoBackArrow />
@@ -34,6 +33,8 @@ const Tutors = () => {
                 <Text style={ styles.tutorTitleText }>Meet Your Expert Tutors</Text>
                 <Text style={ styles.tutorIntroText }>Learning is easier with the right tutor. Explore our list of expert educators and start your journey to success!</Text>
             </View>
+
+            <SearchComponent />
 
             <View>
                 <FlatList 
@@ -48,26 +49,25 @@ const Tutors = () => {
 
                                 <View>
                                     <View style={ styles.tutorDetailIconView }>
-                                        <Fontisto name='person' size={ 16 } style={ styles.tutorDetailsIcon } />
+                                        <Fontisto name='person' size={ 16 } color={ Themes.grey } style={ styles.tutorDetailsIcon } />
                                         <Text style={ [ styles.tutorDetailText, styles.tutorNameText ] }>{ item.name }</Text>
                                     </View>
 
                                     <View style={ styles.tutorDetailIconView }>
-                                        <Ionicons name='book-sharp' size={ 16 } style={ styles.tutorDetailsIcon } />
+                                        <Ionicons name='book-sharp' size={ 16 } color={ Themes.grey } style={ styles.tutorDetailsIcon } />
                                         <Text style={ styles.tutorDetailText }>{ item.subject }</Text>
                                     </View>
 
                                     <View style={ styles.tutorDetailIconView }>
-                                        <Ionicons name='location-sharp' size={ 16 } style={ styles.tutorDetailsIcon } />
+                                        <Ionicons name='location-sharp' size={ 16 } color={ Themes.grey } style={ styles.tutorDetailsIcon } />
                                         <Text style={ styles.tutorDetailText }>{ item.location }</Text>
                                     </View>
-
                                 </View>
+
 
                                 <View style={ styles.tutorDetailIconView}>
                                     <Text style={ styles.tutorDetailsIcon }>{ item.averageRating }</Text>
-                                    <AntDesignIcon name='star' size={ 20 } color='gold' />
-                                    
+                                    <AntDesignIcon name='star' size={ 20 } color='gold' style={ styles.avgRatingIcon } />
                                 </View>
                             </View>
 
@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
     displayTutorParentView: {
         backgroundColor: Themes.white,
         marginVertical: 10,
-        // height: 200,
+        marginTop: 30,
         paddingHorizontal: 10,
         paddingVertical: 20,
         borderRadius: 10
@@ -127,7 +127,8 @@ const styles = StyleSheet.create({
         marginTop: 8
     },
     tutorTitleView: {
-        marginTop: 30
+        marginTop: 30,
+        marginBottom: 20
     },
     tutorTitleText: {
         fontSize: 20,
@@ -147,12 +148,16 @@ const styles = StyleSheet.create({
         marginBottom: 5
     },
     tutorDetailsIcon: {
-        marginRight: 10
+        marginRight: 10,
+        marginTop: 5
     },
     tutorNameText: {
         fontSize: 15,
         fontWeight: 'bold',
         color: Themes.primaryButtonBackground
+    },
+    avgRatingIcon: {
+        marginTop: 3
     },
     bioText: {
         fontStyle: 'italic',

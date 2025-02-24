@@ -59,17 +59,17 @@ const Home = () => {
 
                                 <View>
                                     <View style={ styles.topRatedTutorDetailIconView }>
-                                        <Fontisto name='person' size={ 16 } style={ styles.topRatedTutorDetailsIcon } />
+                                        <Fontisto name='person' size={ 16 } color={ Themes.grey } style={ styles.topRatedTutorDetailsIcon } />
                                         <Text style={ [ styles.tutorDetailsText, styles.tutorNameText ] }>{ item.name }</Text>
                                     </View>
 
                                     <View style={ styles.topRatedTutorDetailIconView }>
-                                        <Ionicons name='book-sharp' size={ 16 } style={ styles.topRatedTutorDetailsIcon } />
+                                        <Ionicons name='book-sharp' size={ 16 } color={ Themes.grey } style={ styles.topRatedTutorDetailsIcon } />
                                         <Text style={ styles.tutorDetailsText }>{ item.subject }</Text>
                                     </View>
 
                                     <View style={ styles.topRatedTutorDetailIconView }>
-                                        <Ionicons name='location-sharp' size={ 16 } style={ styles.topRatedTutorDetailsIcon } />
+                                        <Ionicons name='location-sharp' size={ 16 } color={ Themes.grey } style={ styles.topRatedTutorDetailsIcon } />
                                         <Text style={ styles.tutorDetailsText }>{ item.location }</Text>
                                     </View>
                                 </View>
@@ -169,7 +169,8 @@ const styles = StyleSheet.create({
         marginBottom: 5
     },
     topRatedTutorDetailsIcon: {
-        marginRight: 10
+        marginRight: 10,
+        marginTop: 3
     },
     hireTutorBtn: {
         backgroundColor: Themes.primaryButtonBackground,

@@ -82,7 +82,7 @@ const TutorProfile = ( ) => {
                             <View style={ styles.detailsView }>
                                 <View style={ styles.detailSectionView }>
                                     <View style={ styles.detailSectionTitleIconView }>
-                                        <MaterialCommunityIcons name='account-details' size={ 27 } style={ styles.detailSectionIcon } />
+                                        <MaterialCommunityIcons name='account-details' color={ Themes.grey } size={ 27 } style={ styles.detailSectionIcon } />
                                         <Text style={ styles.detailSectionTextHeader }>Bio</Text>
                                     </View>
                                     <Text>{ targetTutor.bio }</Text>
@@ -90,18 +90,18 @@ const TutorProfile = ( ) => {
 
                                 <View style={ styles.detailSectionView }>
                                     <View style={ styles.detailSectionTitleIconView }>
-                                        <FontistoIcon name='person' size={ 20 } style={ styles.detailSectionIcon } />
+                                        <FontistoIcon name='person' color={ Themes.grey } size={ 20 } style={ styles.detailSectionIcon } />
                                         <Text style={ styles.detailSectionTextHeader }>Contact Info</Text>
                                     </View>
 
 
                                     <View style={ styles.contactInfoDetails }>
-                                        <Icon name='message-square' size={ 20 } style={ styles.contactInfoDetailIcon } />
+                                        <Icon name='message-square' color={ Themes.grey } size={ 20 } style={ styles.contactInfoDetailIcon } />
                                         <Text> { targetTutor.email } </Text>
                                     </View>
 
                                     <View style={ styles.contactInfoDetails }>
-                                        <Icon name='phone-call' size={ 20 } style={ styles.contactInfoDetailIcon } />
+                                        <Icon name='phone-call' color={ Themes.grey } size={ 20 } style={ styles.contactInfoDetailIcon } />
                                         <Text> { targetTutor.email } </Text>
                                     </View>
                                 </View>
@@ -109,7 +109,7 @@ const TutorProfile = ( ) => {
 
                                 <View style={ styles.detailSectionView }>
                                     <View style={ styles.detailSectionTitleIconView }>
-                                        <Ionicons name='school' size={ 20 } style={ styles.detailSectionIcon } />
+                                        <Ionicons name='school' color={ Themes.grey } size={ 20 } style={ styles.detailSectionIcon } />
                                         <Text style={ styles.detailSectionTextHeader }>Alma Mata</Text>
                                     </View>
 
@@ -119,7 +119,7 @@ const TutorProfile = ( ) => {
 
                                 <View style={ styles.detailSectionView }>
                                     <View style={ styles.detailSectionTitleIconView }>
-                                        <Ionicons name='book-sharp' size={ 20 } style={ styles.detailSectionIcon } />
+                                        <Ionicons name='book-sharp' color={ Themes.grey } size={ 20 } style={ styles.detailSectionIcon } />
                                         <Text style={ styles.detailSectionTextHeader }>Subjects & Expertise</Text>
                                     </View>
 
@@ -129,7 +129,7 @@ const TutorProfile = ( ) => {
 
                                 <View style={ styles.detailSectionView }>
                                     <View style={ styles.detailSectionTitleIconView }>
-                                        <MaterialCommunityIcons name='chart-timeline-variant' size={ 20 } style={ styles.detailSectionIcon } />
+                                        <MaterialCommunityIcons name='chart-timeline-variant' color={ Themes.grey } size={ 20 } style={ styles.detailSectionIcon } />
                                         <Text style={ styles.detailSectionTextHeader }>Experience </Text>
                                     </View>
 
@@ -139,7 +139,7 @@ const TutorProfile = ( ) => {
 
                                 <View style={ styles.detailSectionView }>
                                     <View style={ styles.detailSectionTitleIconView }>
-                                        <Ionicons name='location-sharp' size={ 20 } style={ styles.detailSectionIcon } />
+                                        <Ionicons name='location-sharp' color={ Themes.grey } size={ 20 } style={ styles.detailSectionIcon } />
                                         <Text style={ styles.detailSectionTextHeader }>Location & Availability</Text>
                                     </View>
 
@@ -149,7 +149,7 @@ const TutorProfile = ( ) => {
 
                                 <View style={ styles.detailSectionView }>
                                     <View style={ styles.detailSectionTitleIconView }>
-                                        <MaterialCommunityIcons name='pencil' size={ 20 } style={ styles.detailSectionIcon } />
+                                        <MaterialCommunityIcons name='pencil' color={ Themes.grey } size={ 20 } style={ styles.detailSectionIcon } />
                                         <Text style={ styles.detailSectionTextHeader }>Teaching Methodology</Text>
                                     </View>
 
@@ -159,7 +159,7 @@ const TutorProfile = ( ) => {
 
                                 <View style={ styles.detailSectionView }>
                                     <View style={ styles.detailSectionTitleIconView }>
-                                        <FontistoIcon name='checkbox-active' size={ 20 } style={ styles.detailSectionIcon } />
+                                        <FontistoIcon name='checkbox-active' color={ Themes.grey } size={ 20 } style={ styles.detailSectionIcon } />
                                         <Text style={ styles.detailSectionTextHeader }>Preferred Teaching Method</Text>
                                     </View>
 
@@ -169,7 +169,7 @@ const TutorProfile = ( ) => {
 
                                 <View style={ styles.detailSectionView }>
                                     <View style={ styles.detailSectionTitleIconView }>
-                                        <Ionicons name='cash' size={ 20 } style={ styles.detailSectionIcon } />
+                                        <Ionicons name='cash' color={ Themes.grey } size={ 20 } style={ styles.detailSectionIcon } />
                                         <Text style={ styles.detailSectionTextHeader }>Pricing</Text>
                                     </View>
 
@@ -179,7 +179,7 @@ const TutorProfile = ( ) => {
 
                                 <View style={ styles.detailSectionView }>
                                     <View style={ styles.detailSectionTitleIconView }>
-                                        <MaterialCommunityIcons name='cash-check' size={ 25 } style={ styles.detailSectionIcon } />
+                                        <MaterialCommunityIcons name='cash-check' color={ Themes.grey } size={ 25 } style={ styles.detailSectionIcon } />
                                         <Text style={ styles.detailSectionTextHeader }>Accepted Mode of Payment</Text>
                                     </View>
 

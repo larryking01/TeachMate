@@ -17,7 +17,7 @@ const MainAppScreens = ( ) => {
         <Tabs
             screenOptions={{
                 headerShown: false,
-                tabBarActiveTintColor: Themes.buttonPrimaryColor,
+                tabBarActiveTintColor: Themes.primaryButtonBackground,
                 // tabBarInactiveTintColor: 'red',
                 tabBarStyle: {
                     // backgroundColor: 'yellow',
