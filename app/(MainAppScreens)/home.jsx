@@ -18,8 +18,12 @@ import AntDesignIcon from 'react-native-vector-icons/AntDesign'
 
 
 
+
 const Home = () => {
 
+    const engagingSessionsArray = [
+        {}
+    ]
 
     // navigate to full tutor profile
     const navigateToFullTutorProfile = ( ) => {
@@ -46,6 +50,29 @@ const Home = () => {
                     
                     <SearchComponent />
                 </View>
+
+
+
+                <View style={ styles.engagingSessionView }>                    
+                    <View>
+                        <Text>dshsh</Text>
+                    </View>
+
+                    <View>
+                        <Text>dshsh</Text>
+                    </View>
+
+                    <View>
+                        <Text>dshsh</Text>
+                    </View>
+
+                    <View>
+                        <Text>dshsh</Text>
+                    </View>
+
+                </View>
+
+
 
                 <View>
                     <FlatList 
@@ -91,7 +118,7 @@ const Home = () => {
                         ListEmptyComponent={
                                 <View style={ styles.notFoundView }>
                                 <Image source={ notFound } style={ styles.notFoundImage } resizeMode='contain' />
-                                <Text style={ styles.notFoundText }>Sorry...this information is not available right now</Text>
+                                <Text style={ styles.notFoundText }>Sorry...this information is not available right ..</Text>
                                 </View>
                                 }
                 />
@@ -200,6 +227,9 @@ const styles = StyleSheet.create({
     },
     notFoundText: {
     textAlign: 'center'
+    },
+    engagingSessionView: {
+
     }
 
 
